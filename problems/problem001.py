@@ -1,12 +1,12 @@
-TAEGET_NUM = 1000
+TAEGET_NUM = 999
 
-n = 0
-sum = 0
+n_3 = TAEGET_NUM // 3
+sum_3 = n_3 * ( 2 * 3 + (n_3 - 1) * 3) // 2
 
-while n < TAEGET_NUM:
-  if n % 3 == 0 or n % 5 == 0:
-    sum += n
+n_5 = TAEGET_NUM // 5
+sum_5 = n_5 * ( 2 * 5 + (n_5 - 1) * 5) // 2
 
-  n += 1
+n_15 = TAEGET_NUM // 15
+sum_15 = n_15 * ( 2 * 15 + (n_15 - 1) * 15) // 2
 
-print(sum)
+print(sum_3 + sum_5 - sum_15)
